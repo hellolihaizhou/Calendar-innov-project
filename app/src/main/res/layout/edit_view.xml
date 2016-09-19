@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+    android:background="#ffffff"
+
+     >
+        <View
+ 
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+<RelativeLayout
+    android:id="@+id/rlyout"
+      android:background="#ffffff"
+         android:layout_marginLeft="@dimen/item_margin_Right_left"
+         android:layout_marginRight="@dimen/item_margin_Right_left"
+         android:layout_width="fill_parent"
+         android:layout_height="55dp"
+         android:gravity="center"
+     >
+
+         <ImageButton
+              android:visibility="gone"
+              android:id="@+id/ibtn_clear"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+            
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/clear" />
+
+         <EditText
+             android:id="@+id/edit_txt"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_centerVertical="true"
+             android:layout_toLeftOf="@+id/ibtn_clear"
+             android:layout_toRightOf="@+id/tv_txt"
+             android:background="@null"
+             android:gravity="center_vertical|right"
+             android:singleLine="true"
+              android:textSize="@dimen/item_textSize"/>
+
+              <TextView
+                  android:textColor="#1a1a1a"
+                  android:textSize="@dimen/item_textSize"
+                  android:id="@+id/tv_txt"
+                  android:layout_width="75dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:paddingRight="@dimen/item_margin_Right_left"
+                  android:text="用" />
+
+     </RelativeLayout> 
+
+
+</LinearLayout>

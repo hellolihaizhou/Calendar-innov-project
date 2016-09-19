@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0f0"
+    xmlns:panel="http://schemas.android.com/apk/res-auto"
+    >
+        <titlebar.TitleBarView
+         
+         android:background="#ffffff"
+        android:id="@+id/titlebar_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+      panel:title_text="更多"   
+      panel:right_visibility="false"
+         />
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#e4e4e4" />
+         <TextView 
+             android:textColor="#1a1a1a"
+             android:textSize="40px"
+             android:background="#ffffff"
+             android:paddingLeft="15dp"
+             android:gravity="center_vertical"
+             android:text="快速选择"
+             android:layout_width="fill_parent"
+             android:layout_height="@dimen/item_height" 
+             />
+         <titlebar.ItemSwitchView
+         android:id="@+id/itemsview_punch"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/item_height"
+         panel:item_text="打卡显示"
+             />
+         
+       <titlebar.ItemSwitchView
+         android:id="@+id/itemsview_shark"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/item_height"
+         panel:item_text="摇一摇"
+             />
+</LinearLayout>

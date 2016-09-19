@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/tvtext"
+        android:layout_width="31dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="left"
+        android:text="1"
+        android:textColor="#343434"
+        android:textSize="13dp" />
+
+    <LinearLayout 
+        android:visibility="invisible"
+        android:id="@+id/lyout_punch"
+        android:gravity="center_vertical"
+        android:layout_width="35dp"
+        android:layout_height="9dp"
+        android:orientation="horizontal"
+        >
+        <punchclock.activity.showPunch
+              android:id="@+id/showpuch"
+              android:layout_height="5dp"
+              android:layout_width="35dp"
+            />
+        <!-- <ImageView 
+           android:layout_width="5dp"
+           android:layout_height="5dp"
+         android:background="@drawable/secondcolor_press"
+         android:layout_marginRight="2dp"
+         /> 
+             <ImageView 
+                 android:id="@+ img1"
+           android:layout_marginRight="2dp"
+           android:layout_width="5dp"
+           android:layout_height="5dp"
+         android:background="@drawable/secondcolor_press"
+         /> 
+              <ImageView 
+                    android:layout_marginRight="2dp"
+           android:layout_width="5dp"
+           android:layout_height="5dp"
+         android:background="@drawable/secondcolor_press"
+         /> 
+          <ImageView 
+                    android:layout_marginRight="2dp"
+           android:layout_width="5dp"
+           android:layout_height="5dp"
+         android:background="@drawable/secondcolor_press"
+         /> 
+         <ImageView 
+           android:layout_marginRight="2dp"
+           android:layout_width="5dp"
+           android:layout_height="5dp"
+         android:background="@drawable/secondcolor_press"
+         />  -->
+    </LinearLayout>
+
+     <View
+         android:visibility="invisible"
+         android:id="@+id/view_select"
+         android:layout_width="35dp"
+         android:layout_height="2dp"
+         android:background="#FE3652" />
+
+</LinearLayout>

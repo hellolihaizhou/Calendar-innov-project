@@ -1,0 +1,10 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="false"
+           android:color="@color/tab_check"
+        android:drawable="@drawable/punch_statistic_tab_last_normal"/>
+    <item android:state_checked="true"
+      
+        android:drawable="@drawable/punch_statistic_tab_last" />
+
+</selector>

@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="add_count_item_height">45dp</dimen>
+    <dimen name="title_bar">45dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dialog_window_width">260dp</dimen>
+    <dimen name="dialog_window_height">120dp</dimen>
+    <dimen name="dialog_title_height">35dp</dimen>
+    <dimen name="dialog_title_text_size">15dp</dimen>
+    <dimen name="tv_text_size">13dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="item_height">45dp</dimen>
+    <dimen name="item_textSize">40px</dimen>
+    <dimen name="item_margin_Right_left">15dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="radio_right">25dp</dimen>
+    <dimen name="Bottom">118px</dimen>
+    <dimen name="radiogroup_height">80dp</dimen>
+    <dimen name="top">110px</dimen>
+    <dimen name="punch_circle">8dp</dimen>
+    <dimen name="setting_item_height">55dp</dimen>
+    <dimen name="setting_titlebar">45dp</dimen>
+    <dimen name="RadioButton">50dp</dimen>
+</resources>

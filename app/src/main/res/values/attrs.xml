@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+       <declare-styleable name="deleteview">
+        <attr name="visibility" format="boolean"/>
+      </declare-styleable>
+
+
+    -<declare-styleable name="EditTextView">
+
+    <attr name="txt" format="string"/>
+
+    <attr name="hint" format="string"/>
+
+    <attr name="ispwd" format="string"/>
+
+    <attr name="enabled" format="string"/>
+
+    <attr name="num" format="string"/>
+
+</declare-styleable>
+
+
+    -<declare-styleable name="TitleBar">
+
+    <attr name="title_text" format="string"/>
+
+    <attr name="text_color" format="color"/>
+
+    <attr name="text_size" format="string"/>
+
+    <attr name="right_src" format="reference"/>
+
+    <attr name="left_src" format="reference"/>
+
+    <attr name="right_visibility" format="boolean"/>
+
+</declare-styleable>
+
+
+    -<declare-styleable name="item">
+
+    <attr name="arrows_visibility" format="boolean"/>
+
+    <attr name="item_text" format="string"/>
+
+    <attr name="item_value" format="string"/>
+
+</declare-styleable>
+
+</resources>

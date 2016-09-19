@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              >
+   <include
+       android:id="@+id/top"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       layout="@layout/calendar_top" />
+
+    <LinearLayout
+        android:layout_marginTop="24px"
+        android:layout_marginBottom="33px"
+        android:id="@+id/week"
+        android:layout_below="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+                style="@style/weekName"
+                android:text="日"/>
+
+        <TextView
+                style="@style/weekName"
+                android:text="一"/>
+
+        <TextView
+                style="@style/weekName"
+                android:text="二"/>
+
+        <TextView
+                style="@style/weekName"
+                android:text="三"/>
+
+        <TextView
+                style="@style/weekName"
+                android:text="四"/>
+
+        <TextView
+                style="@style/weekName"
+                android:text="五"/>
+
+        <TextView
+                style="@style/weekName"
+                android:text="六"/>
+    </LinearLayout>
+
+    <calendar.custom.ScrollableLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calendar_bottom_layout"
+        android:layout_below="@+id/week"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+            <calendar.custom.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:clipChildren="true"
+                    android:columnWidth="30.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="7"
+                    android:stretchMode="columnWidth"
+                    android:layout_marginBottom="10dp"
+                    />
+        </RelativeLayout>
+      <event.activity.eventActivity
+             android:id="@+id/eventactivty"
+             android:layout_width="fill_parent"
+             android:layout_height="match_parent" />
+    </calendar.custom.ScrollableLayout>
+
+   <include
+       android:layout_marginBottom="5dp"
+      android:id="@+id/calendar_bottom_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      layout="@layout/calendar_bottom" />
+
+</RelativeLayout>

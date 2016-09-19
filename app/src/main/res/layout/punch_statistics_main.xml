@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:panel="http://schemas.android.com/apk/res-auto"
+     >
+
+    <titlebar.TitleBarView
+        android:id="@+id/titlebar_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+      panel:title_text="打卡数据"   
+      panel:right_visibility="false"
+         />
+              <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#e4e4e4" />
+         <RadioGroup 
+             android:layout_marginTop="40px"
+             android:layout_marginLeft="27px"
+             android:layout_marginRight="27px"
+             android:id="@+id/rgroup_tab"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" 
+             >
+
+            <RadioButton
+                android:id="@+id/tab_first"
+                style="@style/tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_first_selector"
+                android:checked="true"
+                android:text="日" />
+ 
+            <RadioButton
+                android:id="@+id/tab_middle"
+                style="@style/tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_middle_selector"
+                android:text="周" />
+ 
+             <RadioButton
+                         android:id="@+id/tab_last"
+            style="@style/tab"
+            android:background="@drawable/tab_last_selector"
+             android:text="月"
+           /> 
+                   
+         </RadioGroup>
+
+      <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

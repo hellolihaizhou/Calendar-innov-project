@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+        <View
+        android:id="@+id/constellation_topdiv"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="#f0f0f0"
+      />
+ <ScrollView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:scrollbars="vertical"
+android:fadingEdge="vertical"
+>
+<LinearLayout 
+   android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+    >
+
+        
+    <event.activity.MyListView
+        
+        android:cacheColorHint="#00000000"
+        android:id="@+id/listview_event"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp" />
+      <LinearLayout 
+          android:visibility="gone"
+          android:id="@+id/lyout_empty"
+          android:paddingLeft="10dp"
+         android:gravity="center_vertical"
+           android:layout_width="fill_parent"
+        android:layout_height="60dp" 
+        android:orientation="horizontal"
+         >
+         <ImageView 
+     
+        android:background="@drawable/sort_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+             />
+
+         <TextView
+             android:layout_marginLeft="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="今日暂无事件"
+             android:textColor="#313131"
+             android:textSize="32px" />
+
+    </LinearLayout> 
+    <constellation.constellationmain
+     
+        android:layout_marginBottom="10dp"
+        android:id="@+id/constellationmain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+</ScrollView>
+</LinearLayout>

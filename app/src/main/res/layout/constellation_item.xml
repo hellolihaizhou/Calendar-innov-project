@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/constellation_item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     >
+    </ImageView>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/constellation_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="白羊座" >
+    </TextView>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/constellation_item_date"
+        android:layout_width="75dp"
+        android:textSize="11dp"
+        android:layout_height="wrap_content"
+        android:text="10/24-11/22" >
+    </TextView>
+
+</LinearLayout>

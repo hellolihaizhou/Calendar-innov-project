@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:gravity="center"
+    android:background="@color/darken_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/popup_window"
+        android:layout_width="@dimen/dialog_window_width"
+        android:layout_height="@dimen/dialog_window_height"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:gravity="left"
+            android:text="@string/default_title"
+            android:textColor="@color/dialog_title_text_color"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+        <View
+            android:id="@+id/title_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/lyou_btn"
+            android:background="@color/dialog_title_divider" />
+      <LinearLayout
+          android:id="@+id/lyou_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/leftBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="取消"
+                android:textSize="@dimen/tv_text_size" />
+        <View 
+               android:layout_width="1px" 
+    android:layout_height="match_parent"
+    android:background="@color/dialog_title_divider"
+    android:layout_gravity="center_horizontal"
+            />
+            <TextView
+                android:textColor="#01aaec"
+                android:gravity="center"
+                android:id="@+id/rightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="确定"
+              android:textSize="@dimen/tv_text_size" />
+        </LinearLayout> 
+    </RelativeLayout>
+
+</LinearLayout>

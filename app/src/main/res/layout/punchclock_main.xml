@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0f0"
+    xmlns:panel="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout 
+         android:background="@color/white"
+      android:layout_width="wrap_content"
+        android:layout_height="45dp" 
+        >
+        <titlebar.TitleBarView
+            android:id="@+id/mtitlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      panel:title_text="打卡"   
+         />
+
+    <ImageButton
+           android:layout_alignParentRight="true"
+        android:id="@+id/ibtn_statistics"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/punch_statistics" />
+  
+    </RelativeLayout>
+
+              <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#e4e4e4" />
+     <ListView 
+       
+          android:dividerHeight="1px"
+         android:divider="@color/divider"
+         android:id="@+id/listview_punch"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/empty_count"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="无打卡项目"
+            android:textSize="15dp"
+            android:textColor="#8a8a8a"
+           android:gravity="center"
+           /> 
+
+</LinearLayout>

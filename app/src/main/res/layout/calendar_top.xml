@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/showDateTime"
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:background="@color/white"
+    >
+<TextView
+    android:text="8"
+    android:id="@+id/tv_Month"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="30px"
+    android:textSize="38dp"
+    android:textColor="#fe314e"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:text="2016"
+    android:id="@+id/tv_Year"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:textSize="19dp"
+    android:textColor="#fe314e"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_toRightOf="@+id/tv_Month" />
+<TextView 
+        android:layout_marginRight="15px"
+        android:id="@+id/tv_show_today"
+        android:gravity="center"
+        android:text="2"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@drawable/show_today"
+    />
+
+</RelativeLayout>

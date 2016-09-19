@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+  >
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:background="#ffffff"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/tv_title"
+             android:layout_width="fill_parent"
+             android:layout_height="40.0dip"
+             android:layout_marginBottom="20dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="10dp"
+             android:gravity="left"
+             android:text="您确定要删除吗？"
+             android:textColor="#000000"
+             android:textSize="18dp" />
+         <!--
+              <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+         -->
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:layout_marginBottom="15dp"
+             android:gravity="right"
+             android:orientation="horizontal" >
+
+             <!--
+                 <Button
+                android:textColor="#ffffff"
+                android:background="#FA3933"
+                 android:padding="0px"
+                android:layout_weight="1"
+                android:id="@+id/btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:gravity="center"
+                android:text="确定" />
+
+            <Button
+               android:background="#ffffff"
+                android:padding="0px"
+                android:layout_weight="1"
+                android:id="@+id/btn_cancle"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:gravity="center"
+                android:text="取消" />
+             -->
+
+             <TextView
+                 android:id="@+id/btn_ok"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="确定"
+                 android:textColor="@color/color_btnok"
+                 android:textSize="15dp" />
+
+             <TextView
+                 android:id="@+id/btn_cancle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginRight="15dp"
+                 android:text="取消"
+                 android:textColor="#1a1a1a"
+                 android:textSize="15dp" />
+         </LinearLayout>
+     </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:panel="http://schemas.android.com/apk/res-auto"
+    >  
+   <RelativeLayout
+       android:orientation="vertical"
+        android:id="@+id/count_background"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        >
+  <titlebar.TitleBarView
+      android:id="@+id/titlebar"
+      android:layout_marginTop="20dp"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        panel:title_text="倒计时"
+        panel:text_color="@color/white"
+        panel:right_src="@drawable/header_btn_add_nor"
+        panel:left_src="@drawable/back"
+        />
+  
+      <LinearLayout 
+          android:id="@+id/lyout_info"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="118px"
+          >
+          <TextView 
+             android:textColor="#80ffffff"
+              android:textSize="45px"
+             android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              android:text="距离"
+              />
+          
+            <TextView 
+             android:id="@+id/tv_titles"
+               android:textColor="#ccffffff"
+              android:layout_marginTop="18px"
+              android:textSize="70px"
+             android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              android:text="高考"
+              />
+            
+             <TextView 
+              android:id="@+id/tv_days"
+              android:textColor="#ccffffff"
+              android:layout_marginTop="54px"
+              android:textSize="240px"
+             android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              android:text="81"
+              />
+             
+        <TextView 
+             android:id="@+id/tv_date"
+              android:textColor="#ccffffff"
+              android:layout_marginTop="60px"
+              android:textSize="55px"
+             android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              android:text="2016-8-9"
+              />
+      </LinearLayout>
+
+
+
+    </RelativeLayout> 
+
+    <RelativeLayout
+            android:id="@+id/count_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:layout_below="@+id/count_background">
+        <ListView
+            android:dividerHeight="1px"
+            android:divider="@color/divider"
+            android:id="@+id/displayCountLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+<!--     <View
+            android:id="@+id/count_list_div"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#e4e4e4"
+            android:layout_below="@id/displayCountLv" />
+        <View
+            android:id="@+id/fill_count_blank_div"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:layout_below="@id/count_list_div" /> -->
+        <TextView
+           
+            android:id="@+id/empty_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_count_text"
+            android:textSize="15dp"
+            android:textColor="#8a8a8a"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/> 
+    </RelativeLayout>
+</RelativeLayout>

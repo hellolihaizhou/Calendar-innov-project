@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string-array name="visibility">
+        <item>Default</item>
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+    <string-array name="choose_which_day">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="ConstellationCommentArray">
+        <item>甜蜜的爱情依然进行着,而且迅速升温,恋爱中的人跟爱人沉浸在爱河中,感觉到无比幸福.单身者也有很旺的桃花运,脱单可能性很大</item>
+        <item>聪明的你开始想到一些新的办法，如果不利长远决策，就可以先着手当下的小事开始做起。今天的你虽然很注重完成了什么任务，但是状态仍有些混乱，保持好充足的睡眠与休息吧</item>
+        <item>这个周末你很容易在细节完善中感到满足和愉悦，如果之前有什么事情没有办完，那不妨趁今天完善之。也可以给自己树立一个计划，过得充实又有氧。照顾宠物也会带来好心情哟</item>
+        <item>今天你很容易产生迷茫无力的感受，虽然有来自家庭的温暖，但却容易对职业规划感到迷茫，伴侣关系也摩擦不断。你需要调节好家人与伴侣的关系</item>
+        <item>今日的你洋溢着乐观的气息，对未来的展望使你拥有更多计划和理想，朋友也会相当力挺你。今天等你不妨歇一歇脚步，回顾一下这些想法</item>
+        <item>你可能会触碰到潜意识中的某些伤口，沟通表达欲望低下。有些人这几天也会有一些健康问题，比如过敏，乏力，亚健康，需要注意睡眠</item>
+        <item>经过一番挣扎和负面情绪的困扰，现在的你似乎开悟不少。有些人会有偏财运，他人的红包，或是投资理财方面的收益。休息日不妨思考一下如何利用资源来提升事业状态吧</item>
+        <item>感情生活越来越甜美，最近你的中心几乎都在感情，然而也是能推进关系，脱单，享受甜蜜感情生活的最佳时间。但是今天的你要小心想太多哦</item>
+    </string-array>
+
+    <string-array name="ConstellationArry">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天平座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+
+
+    <string-array name="ConstellationDateArry">
+        <item>3/21-4/19</item>
+        <item>4/20-5/20</item>
+        <item>5/21-6/21</item>
+        <item>6/22-7/22</item>
+        <item>7/23-8/22</item>
+        <item>8/23-9/23</item>
+        <item>9/23-10/23</item>
+        <item>10/24-11/22</item>
+        <item>11/23-12/21</item>
+        <item>12/22-1/19</item>
+        <item>1/20-2/18</item>
+        <item>2/19-3/20</item>
+    </string-array>
+
+    <string-array name="countRepeatArry">
+        <item>无</item>
+        <item>每周</item>
+        <item>每月</item>
+        <item>每年</item>
+    </string-array>
+
+    <string-array name="fragmentListsTitles">
+        <item>日</item>
+        <item>周</item>
+        <item>月</item>
+    </string-array>
+</resources>

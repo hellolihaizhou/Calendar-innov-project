@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"    
+    android:background="#f0f0f0"
+     xmlns:panel="http://schemas.android.com/apk/res-auto"
+     xmlns:item="http://schemas.android.com/apk/res-auto"
+    >
+      <titlebar.TitleBarView
+          
+        android:background="#ffffff"
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar"
+        panel:title_text="新增倒计时"
+        panel:left_src="@drawable/back_to_mainpage"
+        panel:right_src="@drawable/finish_add"
+        />
+          <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+<!--      <com.example.titlebar.ItemView 
+        android:background="#ffffff"
+        android:id="@+id/item_title"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/add_count_item_height"
+         item:item_text="标题"
+        item:item_value="标题"
+         /> -->
+   <titlebar.EditView
+       android:id="@+id/editView_title"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/add_count_item_height" 
+         panel:txt="标题"
+         panel:hint="输入标题"
+        />
+   <titlebar.ItemView
+         android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+         android:layout_height="@dimen/add_count_item_height"
+         item:item_text="日期"
+        item:item_value="点击选择日期"
+       />
+     <titlebar.ItemView
+         android:id="@+id/item_backcolor"
+         android:layout_width="wrap_content"
+      android:layout_height="@dimen/add_count_item_height"
+         item:item_text="设置背景"
+        item:item_value="点击选择背景图片"
+       />
+   <titlebar.ItemSwitchView
+       android:id="@+id/item_switch_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/add_count_item_height"
+         item:item_text="设为封面"
+       />
+     <RelativeLayout 
+      android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+         <titlebar.DeleteView
+             android:layout_alignParentBottom="true"
+          android:id="@+id/delete_menu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"   
+            />
+       
+    </RelativeLayout>
+</LinearLayout>

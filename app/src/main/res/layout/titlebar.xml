@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+       android:id="@+id/rlyout_back"
+       android:layout_width="fill_parent"
+       android:layout_height="45dp"
+       android:layout_gravity="center_vertical" >
+
+     <ImageButton
+             android:id="@+id/ibtn_left"
+             android:layout_marginLeft="5dp"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@drawable/back_to_mainpage" />
+
+          <ImageButton
+        
+             android:id="@+id/ibtn_right"
+             android:layout_marginRight="5dp"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@drawable/add_new" />
+     <TextView
+         android:id="@+id/tv_title"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/ibtn_left"
+         android:gravity="center_vertical"
+         android:text="倒计时"
+         android:textColor="#000000"
+         android:textSize="40px" />
+         
+   </RelativeLayout>
+
+</LinearLayout>

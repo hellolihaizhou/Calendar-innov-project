@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_bottom_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_marginLeft="177px"
+        android:layout_marginRight="177px"
+        android:id="@+id/bootom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:id="@+id/lyout_punch"
+            android:layout_marginRight="37px"
+           style="@style/bar_lyout"
+            >
+            <ImageView 
+            android:background="@drawable/punch"
+              style="@style/bar_img"
+                />
+            <TextView
+             style="@style/bar_tv"
+             android:text="@string/punch"
+                />
+        </LinearLayout>
+    
+        <LinearLayout 
+               android:id="@+id/lyout_count"
+             android:layout_marginRight="37px"
+           style="@style/bar_lyout"
+            >
+            <ImageView 
+            android:background="@drawable/count"
+              style="@style/bar_img"
+                />
+            <TextView
+             style="@style/bar_tv"
+             android:text="@string/conut"
+                />
+        </LinearLayout>
+        
+        
+          <LinearLayout 
+                   android:id="@+id/lyout_add"
+           android:layout_marginRight="37px"
+           style="@style/bar_lyout"
+            >
+            <ImageView 
+            android:background="@drawable/add"
+              style="@style/bar_img"
+                />
+            <TextView
+             style="@style/bar_tv"
+             android:text="@string/add"
+                />
+        </LinearLayout>
+        
+               
+          <LinearLayout 
+                     android:id="@+id/lyout_more"
+           style="@style/bar_lyout"
+            >
+            <ImageView 
+            android:background="@drawable/more"
+              style="@style/bar_img"
+                />
+            <TextView
+             style="@style/bar_tv"
+             android:text="@string/more"
+                />
+        </LinearLayout>
+    
+    </LinearLayout>
+
+</RelativeLayout>

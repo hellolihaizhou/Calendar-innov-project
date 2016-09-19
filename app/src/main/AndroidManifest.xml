@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lihaizhou.mycalendar">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />    <!-- 显示顶层浮窗 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <!-- add at 0627 by begin for baidumap -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- add at 0627 by begin for baidumap -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="DASUX5MF2vfslDBvRhgdikanWLb7LCpo" />
+        <!-- add at 0627 by end for baidumap -->
+
+
+        <activity
+            android:name="calendar.CalendarActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 倒计时界面 -->
+        <activity android:name="countdown.activity.CountMainPage"></activity>
+        <activity android:name="countdown.activity.AddConutDownActivity"></activity>
+        <!-- 打卡界面 -->、
+        <activity android:name="punchclock.activity.punchclockActivity"></activity>
+        <activity android:name="punchclock.activity.addPunchclockActivity"></activity>
+        <activity android:name="punchclock.activity.remindActivity"></activity>  <!-- 重复选择界面 -->
+        <activity android:name="punchclock.activity.punchStatisticsActivity"></activity>
+        <service android:name="punchclock.service.PunchService"   android:label="打卡提醒ervice"    android:enabled="true"></service>
+        <!-- 添加活动 -->
+        <activity android:name="event.activity.AddeventActivity"></activity>
+        <activity android:name="event.activity.sortsActivity"></activity>
+        <activity android:name="event.activity.MapActivity"></activity>
+        <service  android:name="event.service.eventService" android:label="活动提醒service" android:enabled="true"></service>
+
+        <!-- 更多 -->
+        <activity android:name="more.moreActivty"></activity>
+
+
+
+
+
+    </application>
+
+</manifest>
